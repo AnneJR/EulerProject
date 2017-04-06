@@ -5,7 +5,7 @@ var sum = 0;
 fibArray[1] = 0;
 fibArray[2] = 1;
  
-for (var i = 3; i < 4000000; i++) {
+for (var i = 3; fibArray[i-1] < 4000000; i++) {
   fibArray[i] = fibArray[i-2] +fibArray[i-1];
   if (fibArray[i]%2 ===0) {
      evenFib.push(fibArray[i]);		 
